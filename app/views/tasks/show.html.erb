@@ -3,7 +3,7 @@
  のタスク詳細ページ</h1>
 
 <p>タスク: 
-<%= @task.content %>
+<%= @task.status %>
 </p>
 <p>ステータス:
 <%= @task.status %></p>
@@ -13,3 +13,5 @@
 <%= link_to 'このタスクを編集する', edit_task_path(@task) %>
 
 <%= link_to 'このタスクを削除する', @task, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
+
+
